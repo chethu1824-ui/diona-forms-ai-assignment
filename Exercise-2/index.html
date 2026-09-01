@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Worker Progress Report</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Testing controls -->
+  <div class="dev-controls no-print">
+
+    <label for="datasetSelect">
+      Test dataset:
+    </label>
+
+    <select id="datasetSelect">
+      <option value="reference">Reference data</option>
+      <option value="multiple">Multiple records</option>
+    </select>
+
+    <button id="renderBtn">
+      Render document
+    </button>
+
+    <button id="printBtn">
+      Print / Save PDF
+    </button>
+
+  </div>
+
+  <!-- Generated document -->
+  <div id="document"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
